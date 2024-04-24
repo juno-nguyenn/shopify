@@ -41,6 +41,70 @@
     },
     "team_c4ErHc": {
       "type": "team",
+      "blocks": {
+        "user_BN7eV4": {
+          "type": "user",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/user_2.png",
+            "name": "John Smith",
+            "roll": "Profession",
+            "facebook": "https:\/\/www.facebook.com\/",
+            "iconFacebook": "shopify:\/\/shop_images\/icon-facebook.svg",
+            "instagram": "https:\/\/www.instagram.com\/",
+            "iconInstagram": "shopify:\/\/shop_images\/icon-instagram.svg",
+            "twitter": "https:\/\/www.twitter.com\/",
+            "iconTwitter": "shopify:\/\/shop_images\/icon-twitter.svg"
+          }
+        },
+        "user_RREHf8": {
+          "type": "user",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/user_1.png",
+            "name": "John Smith",
+            "roll": "Profession",
+            "facebook": "https:\/\/www.facebook.com\/",
+            "iconFacebook": "shopify:\/\/shop_images\/icon-facebook.svg",
+            "instagram": "https:\/\/www.instagram.com\/",
+            "iconInstagram": "shopify:\/\/shop_images\/icon-instagram.svg",
+            "twitter": "https:\/\/www.twitter.com\/",
+            "iconTwitter": "shopify:\/\/shop_images\/icon-twitter.svg"
+          }
+        },
+        "user_HHbNgm": {
+          "type": "user",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/user_3.png",
+            "name": "John Smith",
+            "roll": "Profession",
+            "facebook": "https:\/\/www.facebook.com\/",
+            "iconFacebook": "shopify:\/\/shop_images\/icon-facebook.svg",
+            "instagram": "https:\/\/www.instagram.com\/",
+            "iconInstagram": "shopify:\/\/shop_images\/icon-instagram.svg",
+            "twitter": "https:\/\/www.twitter.com\/",
+            "iconTwitter": "shopify:\/\/shop_images\/icon-twitter.svg"
+          }
+        },
+        "user_n9JPqC": {
+          "type": "user",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/user_4.png",
+            "name": "John Smith",
+            "roll": "Profession",
+            "facebook": "https:\/\/www.facebook.com\/",
+            "iconFacebook": "shopify:\/\/shop_images\/icon-facebook.svg",
+            "instagram": "https:\/\/www.instagram.com\/",
+            "iconInstagram": "shopify:\/\/shop_images\/icon-instagram.svg",
+            "twitter": "https:\/\/www.twitter.com\/",
+            "iconTwitter": "shopify:\/\/shop_images\/icon-twitter.svg"
+          }
+        }
+      },
+      "block_order": [
+        "user_BN7eV4",
+        "user_RREHf8",
+        "user_HHbNgm",
+        "user_n9JPqC"
+      ],
       "settings": {
         "subtitle": "Team",
         "colorSubtitle": "#96bb7c",
