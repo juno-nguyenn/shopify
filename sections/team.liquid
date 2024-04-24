@@ -1,0 +1,137 @@
+{{ 'team.css' | asset_url | stylesheet_tag }}
+
+{%- style -%}
+  .team__subtitle {
+    color: {{ section.settings.colorSubtitle }};
+  }
+
+{%- endstyle -%}
+
+<section class="team page-width">
+  <div class="container">
+    abc
+  </div>
+  <h6 class="team__subtitle">{{ section.settings.subtitle }}</h6>
+  <h3 class="team__title">{{ section.settings.title }}</h3>
+  <div class="team__description">{{ section.settings.description }}</div>
+  <div class="team__users">
+    {%- for block in section.blocks -%}
+      <div class="team__user">
+        <div class="team__user-image">
+          <img src="{{ block.settings.image | image_url }}" alt=""/>
+        </div>
+        <div class="team__user-name">{{ block.settings.name }}</div>
+        <div class="team__user-roll">{{ block.settings.roll }}</div>
+        <div class="team__user-socials">
+          <a href="{{ block.settings.facebook }}" class="team__user-facebook">
+            <img src="{{ block.settings.iconFacebook | image_url}}" alt="">
+          </a>
+          <a href="{{ block.settings.instagram }}" class="team__user-facebook">
+            <img src="{{ block.settings.iconInstagram | image_url}}" alt="">
+          </a>
+          <a href="{{ block.settings.twitter }}" class="team__user-facebook">
+            <img src="{{ block.settings.iconTwitter | image_url}}" alt="">
+          </a>
+        </div>
+      </div>
+    {%- endfor -%}
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Team Sectionn",
+  "tag": "section",
+  "class": "section",
+  "disabled_on": {
+    "groups": ["header", "footer"]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "subtitle",
+      "default": "Subtitle",
+      "label": "Subtitle"
+    },
+    {
+      "type": "color",
+      "id": "colorSubtitle",
+      "label": "Color Subtitle",
+      "default": "#000000"
+    },
+    {
+      "type": "richtext",
+      "id": "title",
+      "label": "Title"
+    },
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "t:sections.featured-collection.settings.description.label"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "User",
+      "type": "user",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image user"
+        },
+        {
+          "type": "text",
+          "id": "name",
+          "default": "John Smith",
+          "label": "Name"
+        },
+        {
+          "type": "text",
+          "id": "roll",
+          "default": "Profession",
+          "label": "Roll"
+        },
+        {
+          "type": "text",
+          "id": "facebook",
+          "default": "https://www.facebook.com/",
+          "label": "Facebook"
+        },
+        {
+          "type": "image_picker",
+          "id": "iconFacebook",
+          "label": "Icon Facebook"
+        },
+        {
+          "type": "text",
+          "id": "instagram",
+          "default": "https://www.instagram.com/",
+          "label": "Instagram"
+        },
+        {
+          "type": "image_picker",
+          "id": "iconInstagram",
+          "label": "Icon Instagram"
+        },
+        {
+          "type": "text",
+          "id": "twitter",
+          "default": "https://www.twitter.com/",
+          "label": "Twitter"
+        },
+        {
+          "type": "image_picker",
+          "id": "iconTwitter",
+          "label": "Icon Twitter"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Team Section"
+    }
+  ]
+}
+{% endschema %}
